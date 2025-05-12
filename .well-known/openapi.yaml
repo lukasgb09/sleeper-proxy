@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: Sleeper Liga Proxy API
+  version: "1.0"
+  description: API für Sleeper Liga-Datenzugriff
+servers:
+  - url: https://sleeper-proxy.onrender.com
+paths:
+  /league:
+    get:
+      summary: Hole Liga-Informationen
+      operationId: getLeague
+      responses:
+        '200':
+          description: Liga-Daten
+  /rosters:
+    get:
+      summary: Hole Roster-Informationen
+      operationId: getRosters
+      responses:
+        '200':
+          description: Roster-Daten
+  /matchups/{week}:
+    get:
+      summary: Hole Matchups für eine Woche
+      operationId: getMatchups
+      parameters:
+        - name: week
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Matchup-Daten
