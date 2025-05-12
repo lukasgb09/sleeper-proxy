@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Sleeper Liga Plugin",
+  "name_for_model": "sleeper_liga_plugin",
+  "description_for_human": "Greife auf Sleeper Liga-Daten zu, inklusive Matchups und Rosters.",
+  "description_for_model": "Ermöglicht Zugriff auf Liga-Informationen, Matchups und Rosters über die Sleeper API.",
+  "api": {
+    "type": "openapi",
+    "url": "https://sleeper-proxy.onrender.com/.well-known/openapi.yaml"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://sleeper.com/favicon.ico",
+  "contact_email": "deine-email@domain.com",
+  "legal_info_url": "https://sleeper.com"
+}
